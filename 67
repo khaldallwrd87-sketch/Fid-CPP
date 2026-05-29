@@ -1,0 +1,39 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+  vector<int>numsone = { 10,20,30,40 };
+  vector<int>numstwo{ 100,200,300,400 };
+  vector<int>numsthree ( 4,50 );
+  for (int i=0;i<numsone.size();i++)
+  {
+    cout << numsone.at(i) << "   ";
+  }
+  cout << "\n================\n";
+  //=========================================
+  for (int i=0;i<numstwo.size();i++)
+  {
+    cout << numstwo.at(i) << "   ";
+  }
+  cout << "\n================\n";
+  //=========================================
+  for (int i=0;i<numsthree.size();i++)
+  {
+    cout << numsthree.at(i) << "   ";
+  }
+  cout << "\n================\n";
+  cout << "number of  " << numsthree.size() << "\n";
+  //numsthree[4] = 1000;
+  numsthree.push_back(1000);
+  numsthree.at(0) = 2000;
+  cout << "number of  " << numsthree.size() << "\n";
+  cout << "\n================\n";
+  for (int i = 0;i < numsthree.size();i++)
+  {
+    cout << numsthree.at(i) << "   ";
+  }
+  cout << "\n================\n";
+  return 0;
+}
