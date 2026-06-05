@@ -1,0 +1,34 @@
+
+#include <iostream>
+#include <vector>
+#include <array>
+using namespace std;
+
+int main()
+{
+	vector<int>nums = { 1,2,3,4,5 };
+	cout << nums.size() << endl;
+	cout << nums.max_size() << endl;
+	cout << nums.capacity() << endl;
+	nums.push_back(30);
+	nums.push_back(40);
+	nums.push_back(50);
+	nums.push_back(60);
+	cout << nums.capacity() << endl;
+	cout << nums.front() << endl;
+	cout << nums.back() << endl;
+	cout << nums.at(0) << endl;
+	cout << nums.at(nums.size() - 1) << endl;
+	nums.clear();
+	cout << nums.size() << endl;
+	nums.push_back(100);
+	if (nums.empty())
+	{
+		cout << "Vector is empty" << endl;
+	}
+	else
+	{
+		cout << "Vector is not empty" << endl;
+	}
+	return 0;
+}
