@@ -1,0 +1,21 @@
+
+#include <iostream>
+#include <vector>
+#include <array>
+using namespace std;
+
+int main()
+{
+	vector<int>nums = { 1,2,3,4,5 };
+	vector<int>::iterator it = nums.begin();
+	auto ite = nums.begin()+1;
+	cout << "first element: " << *it << endl;
+	cout << "second element: " << *ite << endl;
+ cout << "first element: " << *nums.begin() << endl;
+
+
+ nums.erase(nums.begin(), nums.begin()+2);
+ cout << "first element is: " << *nums.begin() << endl;
+
+	return 0;
+}
