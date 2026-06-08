@@ -1,0 +1,23 @@
+
+#include <iostream>
+#include <vector>
+#include <array>
+using namespace std;
+
+int main()
+{
+	vector<int>nums = { 1,2,3,4,5 };
+	vector<int>::iterator first = nums.begin();
+	vector<int>::iterator last = nums.end()-1;
+	cout << "The first element is: " << *first << endl;
+	cout << "The second element is: " << first [ 1] << endl;
+	cout << "The third element is: " << first [ 2] << endl;
+	cout << "The last element is: " << *last << endl;
+	cout << "The before-last element is: " << last[-1] << endl;
+
+	advance(first, 3);
+	cout << "The element at the new position is: " << *first << endl;
+	advance(first, -2);
+	cout << "The element at the new position is: " << *first << endl;
+	return 0;
+}
