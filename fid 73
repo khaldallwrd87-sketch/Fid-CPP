@@ -1,0 +1,27 @@
+
+#include <iostream>
+#include <vector>
+#include <array>
+using namespace std;
+
+int main()
+{
+	vector<int>nums = { 10,20,30,40,50 };
+	vector<int>::iterator it ;
+	for (it=nums.begin(); it< nums.end(); ++it)
+	{
+		cout << *it << " \n";
+		cout<<"==========================\n";
+		for (int value : nums)
+		{
+			cout << value << " \n";
+		}
+		cout << "==========================\n";
+		int numbers[] = { 500,700,4770,330,530 };
+		for (int myN : numbers)
+		{
+			cout << myN << " \n";
+		}
+	}
+	return 0;
+}
