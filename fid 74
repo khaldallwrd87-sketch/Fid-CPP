@@ -1,0 +1,34 @@
+
+#include <iostream>
+#include <vector>
+#include <array>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+
+	vector<int>nums = { 10,20,30,20,100,90,300,500,20,-20 };
+	int value = 20;
+	int countTimes = count(nums.begin(), nums.end(), value);
+	cout << "The value " << value << " appears " << countTimes << " times in the vector." << endl;
+	cout << "---------------------------------------------" << endl;
+	for (int n:nums)
+	{
+		cout << n << " \n";
+	}
+	cout << "---------------------------------------------" << endl;
+	sort(nums.begin(), nums.end());
+
+	for (int n:nums)
+	{
+		cout << n << " \n";
+	}	
+	cout << "---------------------------------------------" << endl;
+	reverse(nums.begin(), nums.end());
+	for (int n : nums)
+	{
+		cout << n << " \n";
+	}
+	return 0;
+}
