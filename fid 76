@@ -1,0 +1,37 @@
+
+#include <iostream>
+#include <vector>
+#include <array>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+	int nums[]{ 10,20,30,40 };
+	int* prt = &nums[0];
+	cout << "first element: "  << endl;
+	cout << "value with index: " << nums[0] << endl;
+	cout << "value with pointer: " << *prt << endl;
+	cout << "address with index: " << &nums[0] << endl;
+	cout << "address with pointer: " << prt << endl;
+
+	cout << "second element: "  << endl;
+	cout << "value with index: " << nums[1] << endl;
+	cout << "value with pointer: " << *(prt + 1) << endl;
+	cout << "address with index: " << &nums[1] << endl;
+	cout << "address with pointer: " << prt + 1 << endl;
+
+
+	cout << "third element: "  << endl;
+	cout << "value with index: " << nums[2] << endl;
+	cout << "value with pointer: " << *(prt + 2) << endl;
+	cout << "address with index: " << &nums[2] << endl;
+	cout << "address with pointer: " << prt + 2 << endl;
+
+	cout << "fourth element: "  << endl;
+	cout << "value with index: " << nums[3] << endl;
+	cout << "value with pointer: " << *(prt + 3) << endl;
+	cout << "address with index: " << &nums[3] << endl;
+	cout << "address with pointer: " << prt + 3 << endl;
+	return 0;
+}
