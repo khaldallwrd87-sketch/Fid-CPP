@@ -1,0 +1,20 @@
+
+#include <iostream>
+#include <vector>
+#include <array>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+	int* ptr1;
+	int* ptr2=nullptr;
+	cout << ptr2 << endl;
+
+	int a = 10;
+	void* ptr = &a;
+	cout << ptr << endl;
+	cout << *(int*)ptr << endl;
+	//cout << *(static_cast<int*>(ptr)) << endl;
+	return 0;
+}
