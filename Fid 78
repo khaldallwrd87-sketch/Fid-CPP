@@ -1,0 +1,37 @@
+
+#include <iostream>
+#include <vector>
+#include <array>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+	int nums[]{ 1, 2, 3, 4, 5};
+	//cout << nums << endl;
+	//cout << &nums[0] << endl;
+
+	//cout << nums[0] << endl;
+	//cout << *nums << endl;
+
+	//cout << nums[1] << endl;
+	//cout << *(nums + 1) << endl;
+	int* prt = nums;
+	cout << *prt << endl;
+	cout << &prt[0] << endl;
+
+	prt++;
+
+	cout << prt << endl;
+	cout << *prt << endl;
+
+	prt += 3;
+	cout << prt << endl;
+	cout << *prt << endl;
+
+	prt--;
+	cout << prt << endl;
+	cout << *prt << endl;
+
+	return 0;
+}
